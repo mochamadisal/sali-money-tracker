@@ -1,5 +1,5 @@
 {
-  "name": "telegram-expense-bot",
+  "name": "sali-money-tracker",
   "version": "1.0.0",
   "description": "Telegram bot for tracking expenses and saving to Google Sheets",
   "main": "src/index.js",
