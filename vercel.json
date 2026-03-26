@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/webhook.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/webhook",
+      "dest": "/api/webhook.js"
+    }
+  ],
+  "env": {
+    "TELEGRAM_BOT_TOKEN": "@telegram_bot_token",
+    "GOOGLE_SPREADSHEET_ID": "@google_spreadsheet_id",
+    "GOOGLE_SERVICE_ACCOUNT_EMAIL": "@google_service_account_email",
+    "GOOGLE_PRIVATE_KEY": "@google_private_key"
+  }
+}

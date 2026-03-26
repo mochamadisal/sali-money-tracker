@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "set-webhook": "node scripts/set-webhook.js",
+    "delete-webhook": "node scripts/delete-webhook.js",
+    "vercel-dev": "vercel dev"
   },
   "keywords": [
     "telegram",
@@ -24,5 +27,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
